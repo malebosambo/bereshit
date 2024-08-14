@@ -1,31 +1,110 @@
-.App {
+a {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  font-size: 18px;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+input {
+  background-color: sandybrown;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+  padding: 10px 30px;
+}
+
+p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 30px;
+}
+
+.Bold {
+  font-weight: bold;
+}
+
+.Border {
+  background-color: sandybrown;
+  border: 1px solid sandybrown;
+  border-radius: 25px;
+  padding: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Contact {
+  background-image: url(/public/contactus.jpg);
   color: white;
+  padding: 50px 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.Footer {
+  font-size: 18px;
+  padding: 20px 10px;
+  text-align: center;
 }
 
-.heart {
-  color: #ff0000;
+.Harvest {
+  background-image: url(/public/veggie-harvest_1.jpg);
+  color: white;
+  margin-top: -100px;
+  padding: 100px 20px;
 }
 
-.small {
-  font-size: 0.75rem;
+.Health {
+  padding: 30px 10px;
+}
+
+.Health_Item {
+  display: flex;
+}
+
+.Health_Item img {
+  height: 50px;
+  margin-right: 10px;
+  width: 50px;
+}
+
+.Main_Content {
+  width: 100%;
+}
+
+.Menu {
+  color: white;
+  float: right;
+  text-align: center;
+  width: 30%;
+}
+
+.Product {
+  border: 1px solid seagreen;
+  border-radius: 25px;
+  margin: 20px;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.Recipe {
+  padding: 40px 10px;
+}
+
+.Sustainable {
+  background-image: url(/public/woman-farmer_1.jpg);
+  color: white;
+  padding: 40px 20px;
+}
+
+.Title {
+  color: white;
+  float: left;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding-left: 10px;
+  width: 70%;
 }
