@@ -1,10 +1,29 @@
+import React, { useState } from 'react';
 import './App.css';
+import { Link } from 'react-router-dom';
 
-function App() {
+export function App() {
+
+  const [ mobileMenu, setMobileMenu ] = useState(false);
+
+  const showMenu = () => setMobileMenu(!mobileMenu); 
+
   return (
-    <div className="App">
-      <div>
-        <h1>Bereshit</h1>
+    <div className="Home">
+      <div className="Header">
+        <div className="Logo">
+          <div><h1>Bereshit</h1></div>
+          <div className="Mobile-Menu" style={{padding: "20px"}}>
+            <button onClick={showMenu} className={ !mobileMenu ? "" : "Menu" }>=</button>
+            <button onClick={showMenu} className={ mobileMenu ? "" : "Menu" }>X</button>
+          </div>
+        </div>
+        <div className={ mobileMenu ? "Menu-Visible" : "Menu" }>
+          <Link to="/">Home</Link>
+          <Link to="/shop">Shop</Link>
+          <Link to="/blog">Blog</Link>
+          <Link to="/about">About</Link>
+        </div> 
       </div>
       <div className="Main_Content">
         <div className="Harvest">
@@ -21,7 +40,6 @@ function App() {
           <p>We use sustainability farming methodology to make a positive contribution to the environment.</p>
           <p className="Border"><a href="https://sdgs.un.org/goals">Learn about SDGs</a></p>
         </div>
-        <div><img src="./health.jpg" alt="health products"/></div>
         <div className="Health">
           <h1>Healthy Living</h1>
           <p>Use our health products to help you enjoy life more and make you worry less about visits to the doctor.</p>
@@ -48,4 +66,29 @@ function App() {
   );
 }
 
-export default App;
+export function Shop() {
+
+  return (
+    <div>
+      <h1>Shop</h1>
+    </div>
+  )
+}
+
+export function Blog() {
+
+  return (
+    <div>
+      <h1>Blog</h1>
+    </div>
+  )
+}
+
+export function About() {
+
+  return (
+    <div>
+      <h1>About</h1>
+    </div>
+  )
+}
