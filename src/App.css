@@ -28,15 +28,306 @@ p {
 }
 
 @media only screen and (max-width: 600px) {
+  .Border {
+    background-color: sandybrown;
+    border: 1px solid sandybrown;
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+  }
 
+  .Contact {
+    background-image: url(/contactus.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 50px 20px;
+  }
+
+  .Footer {
+    font-size: 18px;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .Harvest {
+    background-image: url(/veggie-harvest_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 500px;
+    padding: 100px 20px;
+  }
+
+  .Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 50px;
+  }
+
+  .Health {
+    padding: 30px 10px;
+  }
+
+  .Health_Item {
+    display: flex;
+  }
+
+  .Health_Item img {
+    height: 50px;
+    margin-right: 10px;
+    width: 50px;
+  }
+
+  .Logo {
+    padding: 10px;
+  }
+
+  .Main_Content {
+    width: 100%;
+  }
+
+  .Menu, a {
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+  }
+
+  .Mobile-Menu {
+    display: none;
+  }
+
+  .Product {
+    border: 1px solid seagreen;
+    border-radius: 25px;
+    margin: 20px;
+    padding: 20px 20px;
+    text-align: center;
+  }
+
+  .Recipe {
+    padding: 40px 10px;
+  }
+
+  .Sustainable {
+    background-image: url(/woman-farmer_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 500px;
+    padding: 40px 20px;
+  }
+
+  .Title {
+    color: white;
+    float: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 10px;
+    width: 70%;
+  }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 768px) {
+  .Border {
+    background-color: sandybrown;
+    border: 1px solid sandybrown;
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+  }
 
+  .Contact {
+    background-image: url(/contactus.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 50px 20px;
+  }
+
+  .Footer {
+    font-size: 18px;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .Harvest {
+    background-image: url(/veggie-harvest_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 500px;
+    padding: 100px 20px;
+  }
+
+  .Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 50px;
+  }
+
+  .Health {
+    padding: 30px 10px;
+  }
+
+  .Health_Item {
+    display: flex;
+  }
+
+  .Health_Item img {
+    height: 50px;
+    margin-right: 10px;
+    width: 50px;
+  }
+
+  .Logo {
+    padding: 10px;
+  }
+
+  .Main_Content {
+    width: 100%;
+  }
+
+  .Menu, a {
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+  }
+
+  .Mobile-Menu {
+    display: none;
+  }
+
+  .Product {
+    border: 1px solid seagreen;
+    border-radius: 25px;
+    margin: 20px;
+    padding: 20px 20px;
+    text-align: center;
+  }
+
+  .Recipe {
+    padding: 40px 10px;
+  }
+
+  .Sustainable {
+    background-image: url(/woman-farmer_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 500px;
+    padding: 40px 20px;
+  }
+
+  .Title {
+    color: white;
+    float: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 10px;
+    width: 70%;
+  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
+  .Border {
+    background-color: sandybrown;
+    border: 1px solid sandybrown;
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+  }
 
+  .Contact {
+    background-image: url(/contactus.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 50px 20px;
+  }
+
+  .Footer {
+    font-size: 18px;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .Harvest {
+    background-image: url(/veggie-harvest_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 500px;
+    padding: 100px 20px;
+  }
+
+  .Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 50px;
+  }
+
+  .Health {
+    padding: 30px 10px;
+  }
+
+  .Health_Item {
+    display: flex;
+  }
+
+  .Health_Item img {
+    height: 50px;
+    margin-right: 10px;
+    width: 50px;
+  }
+
+  .Logo {
+    padding: 10px;
+  }
+
+  .Main_Content {
+    width: 100%;
+  }
+
+  .Menu, a {
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+  }
+
+  .Mobile-Menu {
+    display: none;
+  }
+
+  .Product {
+    border: 1px solid seagreen;
+    border-radius: 25px;
+    margin: 20px;
+    padding: 20px 20px;
+    text-align: center;
+  }
+
+  .Recipe {
+    padding: 40px 10px;
+  }
+
+  .Sustainable {
+    background-image: url(/woman-farmer_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 500px;
+    padding: 40px 20px;
+  }
+
+  .Title {
+    color: white;
+    float: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 10px;
+    width: 70%;
+  }
 }
 
 @media only screen and (min-width: 993px) and (max-width: 1400px) {
