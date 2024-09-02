@@ -4,8 +4,64 @@ import { Link } from 'react-router-dom';
 
 export function App() {
 
+  const products = [
+    {
+      id: 1,
+      name: "Marula Nuts",
+      imageUrl: "",
+      price: ""
+    },
+    {
+      id: 2,
+      name: "Marula Energy Bites",
+      imageUrl: "",
+      price: ""
+    },
+    {
+      id: 3,
+      name: "Moringa Seeds (unshelled)",
+      imageUrl: "",
+      price: ""
+    },
+    {
+      id: 4,
+      name: "Moringa Leaf Powder",
+      imageUrl: "",
+      price: ""
+    },
+    {
+      id: 5,
+      name: "Carob Seed Powder",
+      imageUrl: "",
+      price: ""
+    },
+    {
+      id: 6,
+      name: "Sesame Seeds",
+      imageUrl: "",
+      price: ""
+    },
+    {
+      id: 7,
+      name: "Parsley",
+      imageUrl: "",
+      price: ""
+    },
+    {
+      id: 8,
+      name: "Fanugreek Leaves",
+      imageUrl: "",
+      price: ""
+    },
+    {
+      id: 9,
+      name: "Fanugreek Seeds",
+      imageUrl: "",
+      price: ""
+    }
+  ]
+  
   const [ mobileMenu, setMobileMenu ] = useState(false);
-
   const showMenu = () => setMobileMenu(!mobileMenu); 
 
   return (
