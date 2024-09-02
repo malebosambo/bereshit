@@ -94,8 +94,8 @@ p {
     text-decoration: none;
   }
 
-  .Mobile-Menu {
-    display: none;
+  .Menu-Visible {
+  
   }
 
   .Product {
@@ -195,8 +195,8 @@ p {
     text-decoration: none;
   }
 
-  .Mobile-Menu {
-    display: none;
+  .Menu-Visible {
+
   }
 
   .Product {
@@ -288,6 +288,10 @@ p {
 
   .Main_Content {
     width: 100%;
+  }
+
+  .Menu {
+
   }
 
   .Menu, a {
@@ -393,6 +397,10 @@ p {
   
   .Main_Content {
     width: 100%;
+  }
+
+  .Menu {
+  
   }
 
   .Menu, a {
