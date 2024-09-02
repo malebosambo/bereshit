@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ProductCard from './components/productCard';
 import './App.css';
 import { Link } from 'react-router-dom';
 
@@ -59,7 +60,7 @@ export function App() {
       imageUrl: "",
       price: ""
     }
-  ]
+  ];
   
   const [ mobileMenu, setMobileMenu ] = useState(false);
   const showMenu = () => setMobileMenu(!mobileMenu); 
@@ -86,10 +87,8 @@ export function App() {
           <h1>Harvesting Life</h1>
           <p>We grow a great variety of vegetables and herbs for your kitchen and outdoor cooking.</p>
         </div>
-        <div className="Product">
-          <h2>Organic Okra</h2>
-          <img src="./okra.jpg" alt="okra" />
-          <p className="Bold">R50.00/kg</p>
+        <div className="Products">
+          {products.map((product) => <ProductCard id={product.id} name={product.name} image={product.imageUrl} price={product.price} />)}
         </div>
         <div className="Sustainable">
           <h2>Driven by sustainability</h2>
