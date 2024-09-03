@@ -12,16 +12,6 @@ img {
   width: 100%;
 }
 
-input {
-  background-color: sandybrown;
-  border: none;
-  border-radius: 25px;
-  color: white;
-  font-size: 20px;
-  margin-top: 20px;
-  padding: 10px 30px;
-}
-
 p {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 30px;
@@ -40,7 +30,7 @@ p {
     background-image: url(/contactus.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
+    color: black;
     padding: 50px 20px;
   }
 
@@ -51,23 +41,27 @@ p {
   }
 
   .Harvest {
-    background-image: url(/veggie-harvest_1.jpg);
+    background-image: url(/marula.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
-    height: 500px;
-    padding: 100px 20px;
+    color: black;
+    padding: 100px 50px;
+    text-align: center;
   }
 
   .Header {
+    color: seagreen;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px 50px;
+    flex-direction: column;
+    padding: 0 20px;
   }
 
   .Health {
-    padding: 30px 10px;
+    padding: 30px 20px;
+  }
+
+  .Health > h1 {
+    color: seagreen;
   }
 
   .Health_Item {
@@ -81,11 +75,16 @@ p {
   }
 
   .Logo {
-    padding: 10px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .Main_Content {
     width: 100%;
+  }
+
+  .Menu {
+    display: none;
   }
 
   .Menu, a {
@@ -95,19 +94,32 @@ p {
   }
 
   .Menu-Visible {
-  
+    
+  }
+
+  .Mobile_Menu {
+    padding: 40px 0;
   }
 
   .Product {
     border: 1px solid seagreen;
     border-radius: 25px;
     margin: 20px;
-    padding: 20px 20px;
+    padding: 10px 50px;
     text-align: center;
   }
 
+  .Products {
+    
+  }
+
+  .Product-Items {
+    display: flex;
+    overflow-x: auto;
+  }
+
   .Recipe {
-    padding: 40px 10px;
+    padding: 40px 20px;
   }
 
   .Sustainable {
@@ -115,8 +127,7 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    height: 500px;
-    padding: 40px 20px;
+    padding: 100px 50px;
   }
 
   .Title {

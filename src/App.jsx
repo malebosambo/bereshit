@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ProductCard from './components/productCard';
+import Header from './components/header';
 import './App.css';
 import { Link } from 'react-router-dom';
 
@@ -9,91 +10,77 @@ export function App() {
     {
       id: 1,
       name: "Marula Nuts",
-      imageUrl: "",
-      price: ""
+      imageUrl: "./marula-nuts.png",
+      price: "R0.00"
     },
     {
       id: 2,
       name: "Marula Energy Bites",
-      imageUrl: "",
-      price: ""
+      imageUrl: "./marula-energy-bites.png",
+      price: "R0.00"
     },
     {
       id: 3,
       name: "Moringa Seeds (unshelled)",
-      imageUrl: "",
-      price: ""
+      imageUrl: "./moringa-seeds-unshelled.png",
+      price: "R0.00"
     },
     {
       id: 4,
       name: "Moringa Leaf Powder",
-      imageUrl: "",
-      price: ""
+      imageUrl: "./moringa-leaf-powder.png",
+      price: "R0.00"
     },
     {
       id: 5,
       name: "Carob Seed Powder",
-      imageUrl: "",
-      price: ""
+      imageUrl: "./carob-seed-powder.png",
+      price: "R0.00"
     },
     {
       id: 6,
       name: "Sesame Seeds",
-      imageUrl: "",
-      price: ""
+      imageUrl: "./sesame-seeds-unhulled.png",
+      price: "R0.00"
     },
     {
       id: 7,
       name: "Parsley",
-      imageUrl: "",
-      price: ""
+      imageUrl: "./parsley.png",
+      price: "R0.00"
     },
     {
       id: 8,
       name: "Fanugreek Leaves",
-      imageUrl: "",
-      price: ""
+      imageUrl: "./fenugreek-leaves.png",
+      price: "R0.00"
     },
     {
       id: 9,
       name: "Fanugreek Seeds",
-      imageUrl: "",
-      price: ""
+      imageUrl: "./fenugreek-seeds.jpg",
+      price: "R0.00"
     }
-  ];
-  
-  const [ mobileMenu, setMobileMenu ] = useState(false);
-  const showMenu = () => setMobileMenu(!mobileMenu); 
+  ]; 
 
   return (
     <div className="Home">
-      <div className="Header">
-        <div className="Logo">
-          <div><h1>Bereshit</h1></div>
-          <div className="Mobile-Menu" style={{padding: "20px"}}>
-            <button onClick={showMenu} className={ !mobileMenu ? "" : "Menu" }>=</button>
-            <button onClick={showMenu} className={ mobileMenu ? "" : "Menu" }>X</button>
-          </div>
-        </div>
-        <div className={ mobileMenu ? "Menu-Visible" : "Menu" }>
-          <Link to="/">Home</Link>
-          <Link to="/shop">Shop</Link>
-          <Link to="/blog">Blog</Link>
-          <Link to="/about">About</Link>
-        </div> 
-      </div>
+      <Header />
       <div className="Main_Content">
         <div className="Harvest">
-          <h1>Harvesting Life</h1>
-          <p>We grow a great variety of vegetables and herbs for your kitchen and outdoor cooking.</p>
+          <h1>The Marula Magic</h1>
+          <p>Food from trees and herbs contain high concentration of nourishing substances.</p>
+          <Link to="">Learn</Link>
         </div>
+        <div style={{ textAlign: "center", backgroundColor: "seagreen", padding: "5px" }}><h5>Free delivery for orders over R300!</h5></div>
         <div className="Products">
-          {products.map((product) => <ProductCard id={product.id} name={product.name} image={product.imageUrl} price={product.price} />)}
+          <div style={{ textAlign: "center", padding: "30px" }}><h1>Our Products</h1></div>
+          <div className="Product-Items">{products.map((product) => <ProductCard id={product.id} name={product.name} image={product.imageUrl} price={product.price} />)}</div>
         </div>
         <div className="Sustainable">
-          <h2>Driven by sustainability</h2>
+          <h1>Driven by sustainability</h1>
           <p>We use sustainability farming methodology to make a positive contribution to the environment.</p>
-          <p className="Border"><a href="https://sdgs.un.org/goals">Learn about SDGs</a></p>
+          <p><a href="https://sdgs.un.org/goals">Learn about SDGs</a></p>
         </div>
         <div className="Health">
           <h1>Healthy Living</h1>
@@ -104,11 +91,9 @@ export function App() {
           <div className="Health_Item"><img src="./intestine.png" alt="intestine wellness"/><p>Intestine Wellness</p></div>
         </div>
         <div className="Recipe">
-          <h3>Weekly Recipe</h3>
-          <hr />
+          <h1>Weekly Recipe</h1>
           <img src="./pizza.jpeg" alt="vegan pizza" />
-          <h2>Matso Base Vegan Pizza</h2>
-          <input type="submit" value="Get Recipe" />
+          <h3>Matso Base Vegan Pizza</h3>
         </div>
         <div className="Contact">
           <h1>Contact Us</h1>
@@ -124,8 +109,11 @@ export function App() {
 export function Shop() {
 
   return (
-    <div>
-      <h1>Shop</h1>
+    <div className="Shop">
+      <Header />
+      <div>
+        <h1>Shop</h1>
+      </div>
     </div>
   )
 }
