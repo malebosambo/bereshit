@@ -110,6 +110,11 @@ p {
     padding: 40px 20px;
   }
 
+  .Scroller_Buttons {
+    justify-content: space-between;
+    margin-top: -50px;
+  }
+
   .Sustainable {
     background-image: url(/woman-farmer_1.jpg);
     background-repeat: no-repeat;
@@ -213,6 +218,11 @@ p {
     padding: 40px 20px;
   }
 
+  .Scroller_Buttons {
+    justify-content: space-between;
+    margin-top: -50px;
+  }
+
   .Sustainable {
     background-image: url(/woman-farmer_1.jpg);
     background-repeat: no-repeat;
@@ -306,6 +316,10 @@ p {
     padding: 40px 10px;
   }
 
+  .Scroller_Buttons {
+    display: none;
+  }
+
   .Sustainable {
     background-image: url(/woman-farmer_1.jpg);
     background-repeat: no-repeat;
@@ -388,6 +402,10 @@ p {
   
   .Recipe {
     padding: 40px 10px;
+  }
+
+  .Scroller_Buttons {
+    display: none;
   }
   
   .Sustainable {
