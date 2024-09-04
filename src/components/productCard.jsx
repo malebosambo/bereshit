@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function productCard({ id, name, image, price }) {
+export default function productCard({ name, image, price, quantity }) {
 
   return (
     <div className="Product">
@@ -10,11 +10,12 @@ export default function productCard({ id, name, image, price }) {
         </div>
         <div className="card-body">
           <div>
-            <h2 className="card-title">{name}</h2>
+            <p className="card-title">{name}</p>
           </div>
         </div>
-        <div>
-          <h5>{price}</h5>
+        <div className="Product_Details">
+          <div><h5>{price}</h5></div>
+          <div><h5>Stock: {quantity}</h5></div>
         </div>
       </div>
     </div>

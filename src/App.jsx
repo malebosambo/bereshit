@@ -12,7 +12,8 @@ export function App() {
       id: 1,
       name: "Marula Nuts",
       imageUrl: "./marula-nuts.png",
-      price: "R0.00"
+      price: "R0.00",
+      quantity: 10
     },
     {
       id: 2,
@@ -80,8 +81,8 @@ export function App() {
         <div style={{ textAlign: "center", backgroundColor: "seagreen", padding: "5px" }}><h5>Free delivery for orders over R300!</h5></div>
         <div className="Products">
           <div style={{ textAlign: "center", padding: "30px" }}><h1>Our Products</h1></div>
-          <div ref={scroller} className="Product-Items">{products.map((product) => <ProductCard id={product.id} name={product.name} image={product.imageUrl} price={product.price} />)}</div>
-          <div className="Scroller_Buttons"><button onClick={leftScroll}>L</button><button onClick={rightScroll}>R</button></div>
+          <div ref={scroller} className="Product-Items">{products.map((product) => <ProductCard id={product.id} name={product.name} image={product.imageUrl} price={product.price} quantity={product.quantity} />)}</div>
+          <div className="Scroller_Buttons"><div><button onClick={leftScroll}>L</button></div><div><button onClick={rightScroll}>R</button></div></div>
         </div>
         <div className="Sustainable">
           <h1>Driven by sustainability</h1>
