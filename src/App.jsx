@@ -1,6 +1,7 @@
 import React from 'react';
 import ProductCard from './components/productCard';
 import Header from './components/header';
+import Footer from './components/footer';
 import './App.css';
 import { Link } from 'react-router-dom';
 
@@ -95,13 +96,8 @@ export function App() {
           <img src="./pizza.jpeg" alt="vegan pizza" />
           <h3>Matso Base Vegan Pizza</h3>
         </div>
-        <div className="Contact">
-          <h1>Contact Us</h1>
-          <p>Cell:<br/> <a href="tel:+27670537445">+27670537445</a></p>
-          <p>E-mail:<br/> <a href="mailto:manyeletis@gmail.com">manyeletis@gmail.com</a></p>
-          <p>Address:<br/> 462 Cuba Crescent, Lulekani, 1392</p>
-        </div>
       </div>
+      <Footer />
     </div>
   );
 }
@@ -114,8 +110,9 @@ export function Shop() {
       <div>
         <h1>Shop</h1>
       </div>
+      <Footer />
     </div>
-  )
+  );
 }
 
 export function Blog() {
@@ -124,7 +121,7 @@ export function Blog() {
     <div>
       <h1>Blog</h1>
     </div>
-  )
+  );
 }
 
 export function About() {
@@ -133,5 +130,36 @@ export function About() {
     <div>
       <h1>About</h1>
     </div>
-  )
+  );
+}
+
+export function Contacts() {
+
+  return (
+    <div className="Contact">
+      <Header />
+      <div>
+        <h1>Contact Us</h1><br />
+
+        <div>
+          <h2>Primary</h2>
+          <img src="./Telephone.png" alt="Telephone Icon" className=" Icon" /><p>Cell:<br/> <a href="tel:+27670537445">+27670537445</a></p>
+          <img src="./Email.png" alt="Email Icon" className="Icon" /><p>E-mail:<br/> <a href="mailto:manyeletis@gmail.com">manyeletis@gmail.com</a></p>
+          <img src="./Location.png" alt="Location Icon" className="Icon" /><p>Address:<br/> 462 Cuba Crescent, Lulekani, 1392</p>
+        </div>
+
+        <div>
+          <h2>Business Hours</h2>
+          <h5>MON - FRI: 09:00 - 16:00</h5>
+          <h5>SAT, SUN: CLOSED</h5>
+          <h5>PUBLIC HOLIDAY: CLOSED</h5>
+        </div>
+
+        <div>
+          <h2>Farming Locations</h2>
+        </div>
+      </div>
+      <Footer />
+    </div>
+  );
 }
