@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import ProductCard from './components/productCard';
 import Header from './components/header';
 import Footer from './components/footer';
@@ -64,6 +64,10 @@ export function App() {
     }
   ]; 
 
+  const scroller = useRef(0);
+  const leftScroll = () => scroller.current.scrollLeft();
+  const rightScroll = () => scroller.current.scrollRight();
+
   return (
     <div className="Home">
       <Header />
@@ -76,7 +80,8 @@ export function App() {
         <div style={{ textAlign: "center", backgroundColor: "seagreen", padding: "5px" }}><h5>Free delivery for orders over R300!</h5></div>
         <div className="Products">
           <div style={{ textAlign: "center", padding: "30px" }}><h1>Our Products</h1></div>
-          <div className="Product-Items">{products.map((product) => <ProductCard id={product.id} name={product.name} image={product.imageUrl} price={product.price} />)}</div>
+          <div ref={scroller} className="Product-Items">{products.map((product) => <ProductCard id={product.id} name={product.name} image={product.imageUrl} price={product.price} />)}</div>
+          <div className="Scroller_Buttons"><button onClick={leftScroll}>L</button><button onClick={rightScroll}>R</button></div>
         </div>
         <div className="Sustainable">
           <h1>Driven by sustainability</h1>
