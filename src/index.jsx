@@ -6,6 +6,7 @@ import {
   Route
 } from 'react-router-dom';
 import './index.css';
+import 'bootstrap/dist/css/bootstrap.css';
 import { App, Shop, Blog, About } from './App';
 import reportWebVitals from './reportWebVitals';
 
