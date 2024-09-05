@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import { App, Shop, Blog, About } from './App';
+import { App, Shop, Blog, About, Contacts } from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -19,6 +19,7 @@ root.render(
         <Route path="/shop" element={<Shop />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact-us" element={<Contacts />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
