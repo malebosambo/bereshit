@@ -12,8 +12,8 @@ export default function Footer() {
 
         <div className="Contacts">
           <h3>Contacts</h3><br />
-          <img src="./email.png" alt="Email Icon" className="Icon" ><a href="mailto:info@bereshit.com">info@bereshit.com</a>
-          <img src="./telephone.png" alt="Telephone Icon" className="Icon" ><a href="tel:+27630013711">+27670537445</a><br />
+          <img src="./email.png" alt="Email Icon" className="Icon" /><a href="mailto:info@bereshit.com">info@bereshit.com</a>
+          <img src="./telephone.png" alt="Telephone Icon" className="Icon" /><a href="tel:+27630013711">+27670537445</a><br />
         </div>
 
         <div className="Socials">

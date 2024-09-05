@@ -95,7 +95,7 @@ p {
     border: 1px solid seagreen;
     border-radius: 5px;
     margin: 20px;
-    padding: 10px;
+   
     text-align: center;
     min-width: 300px;
   }
@@ -118,10 +118,10 @@ p {
     padding: 40px 20px;
   }
 
-  .Scroller_Buttons {
+  .Product_Card_Btn {
     display: flex;
     justify-content: space-between;
-
+    padding: 20px;
     width: 100%;
   }
 

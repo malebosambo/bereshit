@@ -82,8 +82,15 @@ export function App() {
         <div className="Products">
           <div style={{ textAlign: "center", padding: "30px" }}><h1>Our Products</h1></div>
           <div ref={scroller} className="Product-Items">{products.map((product) => <ProductCard id={product.id} name={product.name} image={product.imageUrl} price={product.price} quantity={product.quantity} />)}</div>
-          <div className="Scroller_Buttons"><div><button onClick={leftScroll}>L</button></div><div><button onClick={rightScroll}>R</button></div></div>
+         
         </div>
+
+
+
+
+
+
+  
         <div className="Sustainable">
           <h1>Driven by sustainability</h1>
           <p>We use sustainability farming methodology to make a positive contribution to the environment.</p>

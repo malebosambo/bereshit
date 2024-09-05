@@ -6,7 +6,7 @@ export default function productCard({ name, image, price, quantity }) {
     <div className="Product">
       <div className="card" style={{margin: "10px", padding: "10px"}}>
         <div className="Image">
-          <img src={image} className="card-img-top img-responsive img-thumbnail" alt={name} />
+          <img src={image} className="card-img-top img-responsive" alt={name} />
         </div>
         <div className="card-body">
           <div>
@@ -18,6 +18,7 @@ export default function productCard({ name, image, price, quantity }) {
           <div><h5>Stock: {quantity}</h5></div>
         </div>
       </div>
+      <div className="Product_Card_Btn"><div><button>+</button></div><div><button>-</button></div></div>
     </div>
   )
 }
