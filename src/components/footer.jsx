@@ -12,14 +12,14 @@ export default function Footer() {
 
         <div className="Contacts">
           <h3>Contacts</h3><br />
-          <p>Email: info@bereshit.com</p>
-          <p>Cell: +27670537445</p><br />
+          <img src="./email.png" alt="Email Icon" className="Icon" ><a href="mailto:info@bereshit.com">info@bereshit.com</a>
+          <img src="./telephone.png" alt="Telephone Icon" className="Icon" ><a href="tel:+27630013711">+27670537445</a><br />
         </div>
 
         <div className="Socials">
           <h3>Socials</h3><br />
-          <a href="www.linkedin.com/malebosambo"><img src="./Linkedin.png" alt="LinkedIn" className="Icon" /></a>
-          <a href="www.twitter.com/lovais000"><img src="./Twitter.png" alt="Twitter" className="Icon" /></a>
+          <a href="www.linkedin.com/malebosambo"><img src="./linkedin.png" alt="LinkedIn" className="Icon" /></a>
+          <a href="www.twitter.com/lovais000"><img src="./twitter.png" alt="Twitter" className="Icon" /></a>
         </div>
       </div>
     </>
