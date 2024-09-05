@@ -20,6 +20,7 @@ export default function Header() {
           <Link to="/shop">Shop</Link>
           <Link to="/blog">Blog</Link>
           <Link to="/about">About</Link>
+          <Link to="/contact-us">Contact Us</Link>
       </div> 
     </div>
   )  
