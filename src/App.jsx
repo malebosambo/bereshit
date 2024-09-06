@@ -65,37 +65,30 @@ export function App() {
     }
   ]; 
 
-  const scroller = useRef(0);
-  const leftScroll = () => scroller.current.scrollLeft();
-  const rightScroll = () => scroller.current.scrollRight();
-
   return (
     <div className="Home">
       <Header />
+
       <div className="Main_Content">
         <div className="Harvest">
           <h1>The Marula Magic</h1>
           <p>Food from trees and herbs contain high concentration of nourishing substances.</p>
-          <Link to="">Learn</Link>
+          <Link to="/blog/marula">Learn</Link>
         </div>
+
         <div style={{ textAlign: "center", backgroundColor: "seagreen", padding: "5px" }}><h5>Free delivery for orders over R300!</h5></div>
+
         <div className="Products">
           <div style={{ textAlign: "center", padding: "30px" }}><h1>Our Products</h1></div>
-          <div ref={scroller} className="Product-Items">{products.map((product) => <ProductCard id={product.id} name={product.name} image={product.imageUrl} price={product.price} quantity={product.quantity} />)}</div>
-         
+          <div className="Product-Items">{products.map((product) => <ProductCard id={product.id} name={product.name} image={product.imageUrl} price={product.price} quantity={product.quantity} />)}</div> 
         </div>
-
-
-
-
-
-
   
         <div className="Sustainable">
           <h1>Driven by sustainability</h1>
           <p>We use sustainability farming methodology to make a positive contribution to the environment.</p>
-          <p><a href="https://sdgs.un.org/goals">Learn about SDGs</a></p>
+          <a href="https://sdgs.un.org/goals">Learn about SDGs</a>
         </div>
+
         <div className="Health">
           <h1>Healthy Living</h1>
           <p>Use our health products to help you enjoy life more and make you worry less about visits to the doctor.</p>
@@ -104,12 +97,15 @@ export function App() {
           <div className="Health_Item"><img src="./kidney.png" alt="kidney wellness"/><p>Kidney Wellness</p></div>
           <div className="Health_Item"><img src="./intestine.png" alt="intestine wellness"/><p>Intestine Wellness</p></div>
         </div>
+
         <div className="Recipe">
           <h1>Weekly Recipe</h1>
           <img src="./pizza.jpeg" alt="vegan pizza" />
-          <h3>Matso Base Vegan Pizza</h3>
+          <div><img src="pizza.jpg" alt="Pizza Icon" className="Icon" /><h3>Matso Base Vegan Pizza</h3></div>
+          <div><img src="alarm.jpg" alt="Alarm Icon" width="20px" /><p>30 min</p></div>
         </div>
       </div>
+
       <Footer />
     </div>
   );
