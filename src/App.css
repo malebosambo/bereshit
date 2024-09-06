@@ -64,9 +64,14 @@ p {
   }
 
   .Health_Item {
+    border: 1px solid seagreen;
     display: flex;
     padding: 20px;
     width: 100%;
+  }
+
+  .Health_Item > img {
+    height: 100px;
   }
 
   .Icon {
