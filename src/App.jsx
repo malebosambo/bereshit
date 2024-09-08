@@ -70,13 +70,13 @@ export function App() {
       <Header />
 
       <div className="Main_Content">
-        <div className="Harvest">
-          <h1>The Marula Magic</h1>
+        <div className="Marula">
+          <h1>The Marula Magic</h1><br />
           <p>Food from trees and herbs contain high concentration of nourishing substances.</p>
           <Link to="/blog/marula">Learn</Link>
         </div>
 
-        <div style={{ textAlign: "center", backgroundColor: "seagreen", padding: "5px" }}><h5>Free delivery for orders over R300!</h5></div>
+        <div style={{ textAlign: "center", backgroundColor: "seagreen", padding: "10px" }}><h5>Free delivery for orders over R300!</h5></div>
 
         <div className="Products">
           <div style={{ textAlign: "center", padding: "30px" }}><h1>Our Products</h1></div>
@@ -84,25 +84,26 @@ export function App() {
         </div>
   
         <div className="Sustainable">
-          <h1>Driven by sustainability</h1>
+          <h1>Driven by sustainability</h1><br />
+
           <p>We use sustainability farming methodology to make a positive contribution to the environment.</p>
           <a href="https://sdgs.un.org/goals">Learn about SDGs</a>
         </div>
 
         <div className="Health">
-          <h1>Healthy Living</h1>
-          <p>Use our health products to help you enjoy life more and make you worry less about visits to the doctor.</p>
-          <div className="Health_Item"><img src="./brain.png" alt="brain wellness"/><p>Brain Wellness</p></div>
-          <div className="Health_Item"><img src="./heart.png" alt="heart wellness"/><p>Heart Wellness</p></div>
-          <div className="Health_Item"><img src="./kidney.png" alt="kidney wellness"/><p>Kidney Wellness</p></div>
-          <div className="Health_Item"><img src="./intestine.png" alt="intestine wellness"/><p>Intestine Wellness</p></div>
+          <h1>Healthy Living</h1><br />
+          <p>Use our health products to help you enjoy life more and make you worry less about visits to the doctor.</p><br />
+          <div className="Health_Item"><div><img src="./brain.png" alt="brain wellness" className="Icon" /></div><h3>Brain Wellness</h3></div>
+          <div className="Health_Item"><div><img src="./heart.png" alt="heart wellness" className="Icon" /></div><h3>Heart Wellness</h3></div>
+          <div className="Health_Item"><div><img src="./kidney.png" alt="kidney wellness" className="Icon" /></div><h3>Kidney Wellness</h3></div>
+          <div className="Health_Item"><div><img src="./intestine.png" alt="intestine wellness" className="Icon" /></div><h3>Intestine Wellness</h3></div>
         </div>
 
         <div className="Recipe">
-          <h1>Weekly Recipe</h1>
-          <img src="./pizza.jpeg" alt="vegan pizza" />
+          <h1>Weekly Recipe</h1><br />
+          <div><img src="./pizza.jpeg" alt="Vegan Pizza" /></div>
           <div><img src="pizza.jpg" alt="Pizza Icon" className="Icon" /><h3>Matso Base Vegan Pizza</h3></div>
-          <div><img src="alarm.jpg" alt="Alarm Icon" width="20px" /><p>30 min</p></div>
+          <div><img src="alarm.jpg" alt="Alarm Icon" className="Icon" /><h3>30 min</h3></div>
         </div>
       </div>
 

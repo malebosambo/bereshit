@@ -3,15 +3,10 @@ a {
   text-decoration: none;
 }
 
-body {
-  font-size: 18px;
- 
-}
 
-img {
-  height: 100px;
-  width: 100px;
-}
+ 
+
+
 
 p {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -28,8 +23,15 @@ p {
     padding: 50px 20px;
   }
 
+  .Contacts > div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
   .Footer {
     align-items: center;
+    background-color: seagreen;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -39,7 +41,7 @@ p {
     text-align: center;
   }
 
-  .Harvest {
+  .Marula {
     background-image: url(/marula.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -65,17 +67,26 @@ p {
 
   .Health_Item {
     border: 1px solid seagreen;
+    border-radius: 5px;
     display: flex;
+  
+    margin-top: 20px;
     padding: 20px;
     width: 100%;
   }
 
-  .Health_Item > img {
-    height: 100px;
+  .Health_Item > div {
+    background-color: grey;
+    border-radius: 50%;
+    margin-right: 30px;
+    padding: 20px;
   }
 
+ 
+
+
   .Icon {
-    height: 40px;
+    height: 70px;
   }
 
   .Logo {
@@ -130,6 +141,13 @@ p {
 
   .Recipe {
     padding: 40px 20px;
+  }
+
+  .Recipe > div {
+    align-items: center;
+    margin-top: 30px;
+    text-align: center;
+
   }
 
   .Product_Card_Btn {
