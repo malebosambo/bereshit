@@ -5,7 +5,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    padding: 50px 20px;
+    padding: 20px;
   }
 
   .Contacts > div {
@@ -163,7 +163,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    padding: 50px 20px;
+    padding: 20px;
   }
 
   .Contacts > div {
@@ -303,6 +303,10 @@
     color: white;
     padding: 100px 50px;
   }
+
+  h1 {
+    font-size: 50px;
+  }
     
 }
 
@@ -313,7 +317,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    padding: 20px;
+    padding: 50px 20px;
   }
 
   .Footer {
@@ -328,12 +332,13 @@
     width: 30%;
   }
 
-  .Harvest {
+  .Marula {
     background-image: url(/marula.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
     padding: 20px;
+    width: 100%;
   }
 
   .Header {
@@ -344,21 +349,30 @@
   }
 
   .Health {
-    padding: 30px 10px;
+    padding: 30px;
+  }
+
+  .Health > h1 {
+    color: seagreen;
   }
 
   .Health_Item {
+    border: 1px solid seagreen;
+    border-radius: 5px;
     display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    padding: 20px;
   }
 
-  .Health_Item, img {
-    height: 50px;
-    margin-right: 10px;
-    width: 50px;
+  .Health_Item > div {
+    background-color: grey;
+    border-radius: 50%;
+    padding: 20px;
   }
 
   .Icon {
-    height: 50px;
+    height: 80px;
   }
 
   .Logo {
@@ -388,21 +402,38 @@
     border: 1px solid seagreen;
     border-radius: 5px;
     margin: 20px;
-    padding: 20px;
     text-align: center;
   }
 
-  .Products {
+  .Product_Card_Btn {
+    display: flex;
+    justify-content: space-between;
     padding: 20px;
+    width: 100%;
   }
 
-  .Product-Items {
+  .Product_Details {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .Product_Items {
     display: flex;
     flex-direction: row;
   }
 
+  .Products {
+    padding: 40px 10px;
+  }
+
   .Recipe {
     padding: 40px 10px;
+  }
+
+  .Recipe > div {
+    align-items: center;
+    margin-top: 30px;
+    text-align: center;
   }
 
   .Sustainable {
