@@ -1,5 +1,9 @@
 @media only screen and (max-width: 600px) {
 
+  .Cart_Total {
+    color: seagreen;
+  }
+  
   .Contact {
     background-image: url(/contactus.jpg);
     background-repeat: no-repeat;
@@ -26,20 +30,15 @@
     text-align: center;
   }
 
-  .Marula {
-    background-image: url(/marula.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    padding: 100px 50px;
-    text-align: center;
-  }
-
   .Header {
     color: seagreen;
     display: flex;
     flex-direction: column;
     padding: 0 20px;
+  }
+
+  .Header_Icon {
+    height: 50px;
   }
 
   .Health {
@@ -79,6 +78,15 @@
     width: 100%;
   }
 
+  .Marula {
+    background-image: url(/marula.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 100px 50px;
+    text-align: center;
+  }
+
   .Menu {
     display: none;
   }
@@ -114,12 +122,16 @@
     width: 100%;
   }
 
+  .Product_Card_Input {
+    border-radius: 50%;
+  }
+
   .Product_Details {
     display: flex;
     justify-content: space-between;
   }
 
-  .Product-Items {
+  .Product_Items {
     display: flex;
     overflow-x: scroll;
   }
@@ -136,6 +148,10 @@
     align-items: center;
     margin-top: 30px;
     text-align: center;
+  }
+
+  .Shopping_Cart {
+    margin-left: 10px;
   }
 
   .Sustainable {
