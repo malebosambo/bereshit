@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import ProductCard from './components/productCard';
 import Header from './components/header';
 import Footer from './components/footer';
@@ -101,7 +101,7 @@ export function App() {
 
         <div className="Recipe">
           <h1>Weekly Recipe</h1><br />
-          <div><img src="./pizza.jpeg" alt="Vegan Pizza" /></div>
+          <img src="./pizza.jpeg" alt="Vegan Pizza" />
           <div><img src="pizza.jpg" alt="Pizza Icon" className="Icon" /><h3>Matso Base Vegan Pizza</h3></div>
           <div><img src="alarm.jpg" alt="Alarm Icon" className="Icon" /><h3>30 min</h3></div>
         </div>
