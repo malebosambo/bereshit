@@ -11,7 +11,7 @@ export default function Header() {
       <div className="Logo">
           <div><h1>Bereshit</h1></div>
           <div className="Mobile_Menu">
-            <div className="Shopping_Cart"><img src="/shopping-cart.jpg" alt="Shop Bag Icon" className="Header_Icon" /><span>0</span></div>
+            <div><span class="material-icons">shopping_bag</span><span>0</span></div>
             <button onClick={showMenu} className={ !mobileMenu ? "" : "Menu" }>=</button>
             <button onClick={showMenu} className={ mobileMenu ? "" : "Menu" }>X</button>
           </div>
