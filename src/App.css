@@ -108,7 +108,7 @@
   }
 
   .Product {
-    bordr: 1px solid seagreen;
+    border: 1px solid seagreen;
     border-radius: 5px;
     margin: 20px;
     text-align: center;
@@ -122,8 +122,13 @@
     width: 100%;
   }
 
+  .Product_Card_Icon {
+    height: 30px;
+  }
+
   .Product_Card_Input {
-    border-radius: 50%;
+    border-radius: 5px;
+    width: 50px;
   }
 
   .Product_Details {

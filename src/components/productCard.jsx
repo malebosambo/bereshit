@@ -28,7 +28,7 @@ export default function productCard({ name, image, price, quantity }) {
       </div>
       <div className="Product_Card_Btn">
         <div><button on click={addCartItems}><img src="add-item.jpg" alt="Plus Icon" className="Product_Card_Icon" /></button></div>
-        <div><input type="text" /></div>
+        <div><input type="text" defaultValue={cartItems} className="Product_Card_Input" /></div>
         <div><button onClick={removeCartItems}><img src="remove-item.png" alt="Minus Icon" className="Product_Card_Icon" /></button></div>
       </div>
     </div>
