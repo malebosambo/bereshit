@@ -104,7 +104,8 @@
   }
 
   .Mobile_Menu {
-    padding: 40px 0;
+    display: flex;
+    flex-direction: row;
   }
 
   .Product {
@@ -117,6 +118,7 @@
 
   .Product_Card_Btn {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 20px;
     width: 100%;
@@ -128,12 +130,12 @@
 
   .Product_Card_Input {
     border-radius: 5px;
-    width: 50px;
   }
 
   .Product_Details {
     display: flex;
     justify-content: space-between;
+    padding: 10px 15px;
   }
 
   .Product_Items {
