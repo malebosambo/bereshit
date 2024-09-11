@@ -130,6 +130,7 @@
 
   .Product_Card_Input {
     border-radius: 5px;
+    width: 50px;
   }
 
   .Product_Details {
@@ -140,6 +141,7 @@
 
   .Product_Items {
     display: flex;
+    
     overflow-x: scroll;
   }
 
@@ -149,6 +151,7 @@
 
   .Recipe {
     padding: 40px 20px;
+
   }
 
   .Recipe > div {

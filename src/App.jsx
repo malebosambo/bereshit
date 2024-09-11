@@ -80,7 +80,7 @@ export function App() {
 
         <div className="Products">
           <div style={{ textAlign: "center", padding: "30px" }}><h1>Our Products</h1></div>
-          <div className="Product-Items">{products.map((product) => <ProductCard id={product.id} name={product.name} image={product.imageUrl} price={product.price} quantity={product.quantity} />)}</div> 
+          <div className="Product_Items">{products.map((product) => <ProductCard id={product.id} name={product.name} image={product.imageUrl} price={product.price} quantity={product.quantity} />)}</div> 
         </div>
   
         <div className="Sustainable">
