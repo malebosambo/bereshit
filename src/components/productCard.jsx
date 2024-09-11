@@ -1,6 +1,14 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 
 export default function productCard({ name, image, price, quantity }) {
+
+  const { cartItems, setCartItems } = useState(0);
+
+  const addCartItems = () => setCartItems(cartItems + 1);
+  const removeCartItems = () => setCartItems(cartItems - 1);
+
 
   return (
     <div className="Product">
@@ -18,7 +26,11 @@ export default function productCard({ name, image, price, quantity }) {
           <div><h5>Stock: {quantity}</h5></div>
         </div>
       </div>
-      <div className="Product_Card_Btn"><div><button>+</button></div><div><button>-</button></div></div>
+      <div className="Product_Card_Btn">
+        <div><button on click={addCartItems}><img src="add-item.jpg" alt="Plus Icon" className="Product_Card_Icon" /></button></div>
+        <div><input type="text" /></div>
+        <div><button onClick={removeCartItems}><img src="remove-item.png" alt="Minus Icon" className="Product_Card_Icon" /></button></div>
+      </div>
     </div>
   )
 }
