@@ -97,7 +97,11 @@
     text-decoration: none;
   }
 
-  .Menu-Visible {
+  .Menu_Icon {
+    margin-left: 20px;
+  }
+
+  .Menu_Visible {
     background-color: seagreen;
     display: flex;
     flex-direction: column;
@@ -106,6 +110,7 @@
   .Mobile_Menu {
     display: flex;
     flex-direction: row;
+    padding: 20px;
   }
 
   .Product {
