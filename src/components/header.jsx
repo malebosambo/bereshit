@@ -12,8 +12,12 @@ export default function Header() {
           <div><h1>Bereshit</h1></div>
           <div className="Mobile_Menu">
             <div><span class="material-icons">shopping_bag</span><span>0</span></div>
-            <button onClick={showMenu} className={ !mobileMenu ? "" : "Menu" }>=</button>
-            <button onClick={showMenu} className={ mobileMenu ? "" : "Menu" }>X</button>
+            <button onClick={showMenu} className={ !mobileMenu ? "" : "Menu" }><span class="material-symbols-outlined">
+menu
+</span></button>
+            <button onClick={showMenu} className={ mobileMenu ? "" : "Menu" }><span class="material-symbols-outlined">
+close
+</span></button>
           </div>
       </div>
       <div className={ mobileMenu ? "Menu-Visible" : "Menu" }>
