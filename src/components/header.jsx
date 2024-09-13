@@ -12,9 +12,9 @@ export default function Header() {
           <div><h1>Bereshit</h1></div>
           <div className="Mobile_Menu">
             <div><span class="material-icons">shopping_bag</span><span>0</span></div>
-            <button onClick={showMenu} className={ !mobileMenu ? "" : "Menu" }><span class="material-symbols-outlined">
+            <div onClick={showMenu} className={ !mobileMenu ? "" : "Menu" }><span class="material-symbols-outlined">
 menu
-</span></button>
+</span></div>
             <button onClick={showMenu} className={ mobileMenu ? "" : "Menu" }><span class="material-symbols-outlined">
 close
 </span></button>
